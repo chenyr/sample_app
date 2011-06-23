@@ -1,6 +1,6 @@
 module ApplicationHelper
   def title 
-    base_title = "Ruby on Rails Tutorial Sample App"
+    base_title = "InfoHub"
     if @title.nil?
       base_title
     else
@@ -9,7 +9,7 @@ module ApplicationHelper
   end
   
   def logo 
-    image_tag("logo.png", :alt => "Sample App", :class => "round")
+    image_tag("app_logo.png", :alt => "Info Hub", :class => "round")
   end
   	
 end
