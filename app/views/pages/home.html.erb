@@ -1,6 +1,7 @@
 <h1>Info Hub</h1>
 <p>
-This is the home page for the InfoHub application.
+See what kind of info is flooding among your friends
 </p>
-
+<% if !signed_in? %>
 <%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
+<% end %>
