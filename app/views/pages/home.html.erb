@@ -1,7 +1,21 @@
-<h1>Info Hub</h1>
-<p>
-See what kind of info is flooding among your friends
-</p>
-<% if !signed_in? %>
-<%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
+
+<% if signed_in? %>
+	<table class="front" summary="For signed-in users">
+		<tr>
+			<td class="main">
+				<h1>What's new? Share it with your friends</h1>
+				<%= render 'shared/micropost_form' %>
+				<%= render 'shared/feed' %>
+			</td>
+			<td class="sidebar round">
+				<%= render 'shared/user_info' %>
+			</td>
+		</tr>
+	</table>
+<% else %>
+	<h1>Info Hub</h1>
+	<p>
+		See what kind of info is flooding among your friends
+	</p>                    
+	<%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
 <% end %>
