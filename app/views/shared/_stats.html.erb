@@ -5,12 +5,7 @@
 			<td>
 				<a href="<%= following_user_path(@user) %>">
 					<span id="following" class="stat">
-						<% if @user.following.nil? %>
-						 "nil 0"
-						<% else %>
-						 <%= @user.following.count %> 
-						<% end %>
-						following
+					<%= @user.following.count %> following
 					</span>
 				</a>
 			</td>
