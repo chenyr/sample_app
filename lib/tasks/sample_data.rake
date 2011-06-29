@@ -14,15 +14,15 @@ def make_admin
 	             :password => "214177",
 	             :password_confirmation => "214177")
 	admin.toggle!(:admin)
-#	2.times do |n|
-#	  name = Faker::Name.name
-#	  email = "example-#{n+1}@foo.com"
-#	  password = "password"
-#	  User.create!(:name => name, 
-#	               :email => email, 
-#	               :password => password,
-#	               :password_confirmation => password)
-#	end
+	2.times do |n|
+	  name = Faker::Name.name
+	  email = "example-#{n+1}@foo.com"
+	  password = "password"
+	  User.create!(:name => name, 
+	               :email => email, 
+	               :password => password,
+	               :password_confirmation => password)
+	end
 end
 
 def make_microposts
