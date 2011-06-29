@@ -1,7 +1,7 @@
 require 'faker'
 
 namespace :db do
-  desc "File database with sample data"
+  desc "Fill database with sample data"
   task :populate => :environment do
     make_admin
     make_microposts
